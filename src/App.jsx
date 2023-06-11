@@ -1,5 +1,5 @@
-import React from "react"
-import { Route, Routes } from "react-router-dom"
+import React, { useEffect } from "react"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Home from "./pages/Home"
 import Layout from "./Layout"
 import Filieres from "./pages/Filieres"
@@ -12,6 +12,12 @@ import Contact from "./pages/Contact"
 import Blog from "./pages/Blog"
 
 function App() {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [ pathname ])
 
   return (
     <Routes>
