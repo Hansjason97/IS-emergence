@@ -8,6 +8,7 @@ import { data } from '../data/categories.js'
 import { Link } from 'react-router-dom'
 import { carousel } from '../data/hero.js'
 import Articles from '../components/Articles'
+import Modal from '../components/Modal'
 
 function Home() {
 
@@ -35,6 +36,10 @@ function Home() {
         clearInterval(intervalId);
     };
   },[currentIndex]);
+
+
+  //modal
+  const [openModal, setOpenModal] = useState(false);
 
   return (
     <div className='flex flex-col'>
@@ -92,7 +97,10 @@ function Home() {
             </div>
             <div className='mt-4'>
               <p className='max-w-[480px] text-[32px] text-primary font-semibold leading-9'>Pourquoi choisir l’Institut Supérieur de l’Emergence ?</p>
-              <img src={videoPlaceholder} alt="" className='mt-4' />
+              <img src={videoPlaceholder} alt="" className='mt-4 cursor-pointer' onClick={()=>setOpenModal(true)} />
+              <Modal open={openModal} onClose={()=>setOpenModal(false)}>
+              <iframe className='w-[80vw] h-[45vw]' src="https://www.youtube-nocookie.com/embed/mTerLFDGjnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              </Modal> 
             </div>
           </div>
         </div>

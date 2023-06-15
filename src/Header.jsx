@@ -8,7 +8,7 @@ function Header() {
     const [nav, setNav] = useState(false);
 
   return (
-    <div className='fixed top-0 left-0 w-full z-50 bg-white'>
+    <div className='fixed top-0 left-0 w-full z-30 bg-white'>
         <div className='w-full flex flex-col mx-auto '>
             <img src={colorBand} alt="top-band" className='h-[19px]' />
         </div>
