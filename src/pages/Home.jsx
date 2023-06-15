@@ -4,6 +4,7 @@ import imageCampus from '../assets/campus-tour.jpg'
 import videoPlaceholder from '../assets/place-video.jpg'
 import bgRoad from '../assets/background-0.jpg'
 import blogImage from '../assets/image-tag.jpg'
+import videoFrame from '../assets/video-0.mp4'
 import { data } from '../data/categories.js'
 import { Link } from 'react-router-dom'
 import { carousel } from '../data/hero.js'
@@ -99,7 +100,7 @@ function Home() {
               <p className='max-w-[480px] text-[32px] text-primary font-semibold leading-9'>Pourquoi choisir l’Institut Supérieur de l’Emergence ?</p>
               <img src={videoPlaceholder} alt="" className='mt-4 cursor-pointer' onClick={()=>setOpenModal(true)} />
               <Modal open={openModal} onClose={()=>setOpenModal(false)}>
-              <iframe className='w-[80vw] h-[45vw]' src="https://www.youtube-nocookie.com/embed/mTerLFDGjnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              <iframe className='w-[80vw] h-[45vw]' src={videoFrame} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
               </Modal> 
             </div>
           </div>
