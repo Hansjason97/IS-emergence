@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import CallToAction from '../components/CallToAction'
 import imageCampus from '../assets/campus-tour.jpg'
 import videoPlaceholder from '../assets/place-video.jpg'
@@ -25,6 +25,16 @@ function Home() {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   }
+
+  useEffect(() => {
+    const autoplay = () => {
+        currentIndex === carousel.length - 1 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1);
+      }
+    const intervalId = setInterval(autoplay, 3500);
+    return () => {
+        clearInterval(intervalId);
+    };
+  },[currentIndex]);
 
   return (
     <div className='flex flex-col'>

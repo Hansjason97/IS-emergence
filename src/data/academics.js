@@ -29,31 +29,31 @@ export const management = [
 export const engineer = [
     {
         title: "Génie Thermique",
-        content: ""
+        content: "Génie thermique Energie (Option: Froid, Climatisation et Maintenance des Systèmes Fluides)  "
     },
     {
         title: "Génie Civil",
-        content: ""
+        content: "Géotechnique et Géologie appliquée, Géomètre Topographe<br/>Menuiserie et Ebénisterie<br/>Bâtiment, Travaux Publics"
     },
     {
         title: "Génie électrique",
-        content: ""
+        content: "Electrotechnique"
     },
     {
         title: "Génie Mecanique et Productique",
-        content: ""
+        content: "Fabrication et Construction mécanique (Option: Fabrication mécanique, construction mécanique)<br/>Chaudronnerie et soudure<br/>Mécanique automobile"
     },
     {
         title: "Réseau et télécommunication",
-        content: ""
+        content: "Télécommunication<br/>Réseau et Sécurité"
     },
     {
         title: "Chimie, Génie Chimie et des Procédés",
-        content: ""
+        content: "Génie Chimique et procédés<br/>Chimie Générale"
     },
     {
         title: "Génie géologique et pétrolier",
-        content: ""
+        content: "Mines et Géologies Appliquées<br/>Ingénierie Pétrolière"
     },
 ];
 
@@ -72,6 +72,6 @@ export const medic = [
     },
     {
         title: "Agriculture et Elevage",
-        content: "Production animale<br/>production végétale<br/>Aquaculture"
+        content: "Production animale<br/>production végétale<br/>Aquaculture "
     },
 ];

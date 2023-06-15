@@ -53,8 +53,8 @@ function Header() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </div>
-            <Link to="/"><img src={logo} alt="logo" className='h-[43px]' /></Link>
-            <nav className='flex lg:hidden flex-col mt-4'>
+            <Link to="/"><img src={logo} alt="logo" className='h-[43px]' onClick={()=>setNav(!nav)}/></Link>
+            <nav className='flex lg:hidden flex-col mt-4'onClick={()=>setNav(!nav)}>
               <NavLink to="/parcours" className='menu-link'>Nos Parcours</NavLink>
               <NavLink to="/filieres" className='menu-link'>Nos Filières</NavLink>
               <NavLink to="/campus" className='menu-link'>Notre campus</NavLink>
