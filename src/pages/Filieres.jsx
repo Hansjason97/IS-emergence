@@ -17,7 +17,7 @@ function Filieres() {
         <p className='py-[100px] max-w-[575px]'>
         Les actions de l’Institut Supérieur de l’Emergence sont portées vers la recherche de l’émergence des jeunes par la formation. C’est la formation qui précède l’emploi, c’est pour cela que l’institut offre un cursus de formation abouti.
         </p>
-        <div className='hidden xl:flex absolute top-0 translate-y-[-50%] right-0 w-[450px] h-[495px] bg-cover bg-center lg:z-40' style={{backgroundImage: `url(${image1})`}}></div>
+        <div className='hidden xl:flex absolute top-0 translate-y-[-50%] right-0 w-[450px] h-[495px] bg-cover bg-center lg:z-10' style={{backgroundImage: `url(${image1})`}}></div>
       </div>
       <div className='pt-10 pb-[120px] px-2 xl:px-[60px] mx-auto max-w-7xl flex flex-wrap gap-10'>
         <div className='flex flex-col max-w-sm w-fit gap-12'>
